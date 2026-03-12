@@ -1,0 +1,38 @@
+body {
+    background-image:url("../img/teste.jfif");
+    background-size: cover;
+}
+header {
+    background-color: rgba(132, 50, 180, 0.253); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.borboleta-header {
+    height: 60px;                  
+    width: auto;                   
+    opacity: 0.8;                  
+}
+.principal{
+    background-color: rgba(132, 50, 180, 0.253); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
