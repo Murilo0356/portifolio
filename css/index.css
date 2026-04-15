@@ -1,51 +1,131 @@
+:root {
+    --fundo-glass: rgba(255, 255, 255, 0.15); 
+    --borda-glass: rgba(255, 255, 255, 0.25); 
+    --texto-escuro: #3b0764; 
+    --roxo-perfil: #6b2a6b; 
+    --lilas: #6d53b0; 
+    --roxo-principal: #6b21a8;
+    --lilas-suave: #ac92c8;
+}
+
 body {
-    background-image: url("../img/teste.jfif");
+    background: 
+        linear-gradient(135deg, rgba(217, 203, 221, 0.598), rgba(212, 203, 211, 0.6)),
+        url("../img/teste.jfif");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--texto-escuro);
+}
+
+header, .card {
+    background-color: var(--fundo-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--borda-glass);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 header {
-    background-color: rgba(132, 50, 180, 0.253);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.212);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     width: 90%;
     margin: 20px auto;
-    border-radius: 20px;
     padding: 20px;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(115, 49, 173);
 }
 
-.borboleta-header {
-    height: 60px;
-    width: auto;
-    opacity: 0.8;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
 .principal {
     width: 90%;
-    margin: 20px auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.card {
-    background-color: rgba(132, 50, 180, 0.253);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.212);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border-radius: 20px;
+.grande {
+    display: flex;
+    padding: 30px;
+    min-height: 250px;
+    position: relative;
+    overflow: visible;
+    margin-top: 40px;
 }
 
-.grande {
-    height: 250px;
+.perfil-lateral {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-perfil-moldura {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid var(--roxo-perfil);
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px var(--lilas-suave);
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linha-separadora {
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(to right, var(--roxo-perfil), var(--lilas));
+}
+
+.divisor-vertical {
+    width: 2px;
+    background-color: var(--borda-glass);
+    margin: 0 30px;
+}
+
+.habilidades-conteudo {
+    flex: 1;
+}
+
+.habilidades-conteudo h3 {
+    margin-top: 0;
+    color: var(--roxo-principal);
+    font-weight: 600;
+}
+
+.lista-habilidades {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-habilidades li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.lista-habilidades li:hover {
+    color: var(--roxo-principal);
+}
+
+.lista-habilidades span {
+    color: var(--lilas);
 }
 
 .linha {
@@ -55,5 +135,62 @@ header {
 
 .linha .card {
     flex: 1;
-    height: 120px;
+    padding: 20px;
+}
+
+.link-projeto {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--roxo-principal);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid var(--roxo-perfil);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.link-projeto:hover {
+    color: var(--lilas-suave);
+    border-color: var(--lilas);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: var(--roxo-principal);
+}
+
+.imagem-header {
+    width: 100px; 
+    height: auto;
+    margin-left: 15px; 
+    transition: transform 0.3s ease;
+}
+
+.imagem-header:hover {
+    transform: scale(1.1);
+}
+
+.imagem-personagem {
+    position: absolute;
+    right: 30px;
+    bottom: 0; 
+    width: 280px;
+    pointer-events: none;
+    display: flex;
+    align-items: flex-end; 
+}
+
+.img-personagem {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    transform: translateY(0); 
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
+}
+
+.img-personagem:hover {
+    transform: scale(1.02);
 }
