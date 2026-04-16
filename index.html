@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,62 +8,167 @@
 </head>
 <body>
 
-<header>
-    <div class="header-content">
-        <h1>Meu Portfólio</h1>
-        <img src="img/imagem-canto.png" alt="Borboleta" class="imagem-header">
-    </div>
-</header>
+    <header class="topo">
+        <div class="header-content">
+            <div class="logo-area">
+                <h1>Meu Portfólio</h1>
+            </div>
 
-<main class="principal">
-    
-   <div class="card grande">
-    <div class="perfil-lateral">
-        <div class="foto-perfil-moldura">
-            <img src="img/icone.jfif" class="foto-perfil">
-        </div>
-        <h2 class="nome-perfil">MURILO ROLIM</h2>
-        <div class="linha-separadora"></div>
-    </div>
+            <div class="header-acoes">
+                <div class="idiomas" aria-label="Seleção de idioma">
+                    <button class="btn-idioma ativo" type="button" data-lang="pt">PT</button>
+                    <button class="btn-idioma" type="button" data-lang="en">EN</button>
+                </div>
 
-    <div class="divisor-vertical"></div>
+                <button class="btn-tema" type="button" aria-label="Alternar tema escuro">
+                    🌙
+                </button>
 
-    <div class="habilidades-conteudo">
-        <h3>Habilidades em Programação</h3>
-        <ul class="lista-habilidades">
-            <li><span>✦</span> HTML</li>
-            <li><span>✦</span> CSS</li>
-            <li><span>✦</span> JavaScript</li>
-            <li><span>✦</span> Python</li>
-            <li><span>✦</span> Java</li>
-        </ul>
-    </div>
-
-    <div class="imagem-personagem">
-        <img src="img/castorice.png" class="img-personagem">
-    </div>
-</div>
-
-    <div class="linha">
-        
-        <div class="card">
-            <h3>Jogo da Memória</h3>
-            <a href="#" class="link-projeto">Acessar Projeto</a>
-        </div>
-        
-        <div class="card">
-            <h3>Tecnologias Utilizadas</h3>
-            <p>Html, CSS e JavaScript</p>
-          
+                <img src="img/imagem-canto.png" alt="Borboleta decorativa" class="imagem-header">
+            </div>
         </div>
 
-    </div>
+        <nav class="menu-principal" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#educacao">Educação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-</main>
+    <main class="principal">
 
-<footer>
-    <p>Instituto Federal do Paraná - Campus Paranavaí</p>
-</footer>
+        <section id="inicio" class="card hero">
+            <div class="hero-texto">
+                <h2>Olá, eu sou Murilo Rolim</h2>
+                <p>
+                    Sou estudante e desenvolvedor em formação, com interesse em criação de interfaces,
+                    lógica de programação e desenvolvimento web. Gosto de transformar ideias em projetos
+                    funcionais, organizados e visualmente atraentes.
+                </p>
+
+                <div class="hero-botoes">
+                    <a href="#projetos" class="btn-principal">Ver projetos</a>
+                    <a href="#contato" class="btn-secundario">Entrar em contato</a>
+                </div>
+            </div>
+
+            <div class="hero-imagem">
+                <div class="foto-perfil-moldura grande">
+                    <img src="img/icone.jfif" alt="Foto de perfil de Murilo Rolim" class="foto-perfil">
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao">
+            <h2 class="titulo-secao">Projetos</h2>
+
+            <div class="grid-projetos">
+                <article class="card projeto-destaque">
+                    <div class="conteudo-card">
+                        <h3>Jogo da Memória</h3>
+                        <p>
+                            Projeto interativo desenvolvido para treinar lógica, manipulação do DOM e integração com API.
+                            O jogo carrega palavras, salva partidas e mostra ranking.
+                        </p>
+                        <a href="jogo-da-memoria.html" class="link-projeto">Abrir Jogo da Memória</a>
+                    </div>
+                </article>
+
+                <article class="card projeto-destaque">
+                    <div class="conteudo-card">
+                        <h3>Portfólio Pessoal</h3>
+                        <p>
+                            Site desenvolvido com HTML, CSS e JavaScript para apresentar habilidades, projetos,
+                            experiência e formas de contato de maneira organizada e responsiva.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="secao">
+            <h2 class="titulo-secao">Habilidades</h2>
+
+            <div class="card bloco-conteudo">
+                <ul class="lista-habilidades">
+                    <li><span>✦</span> HTML</li>
+                    <li><span>✦</span> CSS</li>
+                    <li><span>✦</span> JavaScript</li>
+                    <li><span>✦</span> Python</li>
+                    <li><span>✦</span> Java</li>
+                    <li><span>✦</span> Git e GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experiencia" class="secao">
+            <h2 class="titulo-secao">Experiência</h2>
+
+            <div class="card bloco-conteudo">
+                <div class="item-curriculo">
+                    <h3>Projeto acadêmico • Desenvolvimento Web</h3>
+                    <p class="linha-info">Instituto Federal do Paraná - Campus Paranavaí</p>
+                    <p class="linha-info">2025 - atual</p>
+                    <p>
+                        Desenvolvimento de um portfólio pessoal com foco em semântica, responsividade,
+                        organização visual e integração com API para apresentação de funcionalidades interativas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="educacao" class="secao">
+            <h2 class="titulo-secao">Educação</h2>
+
+            <div class="card bloco-conteudo">
+                <div class="item-curriculo">
+                    <h3>Instituto Federal do Paraná - Campus Paranavaí</h3>
+                    <p class="linha-info">Curso: Informática / Desenvolvimento de Sistemas</p>
+                    <p class="linha-info">Período: 2024 - atual</p>
+                    <p>
+                        Formação focada em programação, lógica, desenvolvimento de sistemas e construção de interfaces.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2 class="titulo-secao">Contato</h2>
+
+            <div class="grid-contato">
+                <div class="card bloco-conteudo">
+                    <h3>Meus contatos</h3>
+                    <p>E-mail: MuriloRolim2005@gmail.com</p>
+                    <p>Telefone: (55) 44 99167-2005</p>
+                    <p>GitHub: <a href="https://github.com/Murilo0356" target="_blank" rel="noopener noreferrer">Murilo0356</a></p>
+                </div>
+
+                <div class="card bloco-conteudo">
+                    <h3>Formulário de contato</h3>
+                    <form class="formulario">
+                        <label for="nome-contato">Nome</label>
+                        <input type="text" id="nome-contato" name="nome-contato" placeholder="Seu nome">
+
+                        <label for="email-contato">E-mail</label>
+                        <input type="email" id="email-contato" name="email-contato" placeholder="seuemail@email.com">
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+
+                        <button type="submit" class="btn-principal">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Instituto Federal do Paraná - Campus Paranavaí</p>
+    </footer>
 
 </body>
 </html>
