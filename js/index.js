@@ -29,12 +29,12 @@ const traducoes = {
         projetoPortfolioDesc: 'Site desenvolvido com HTML, CSS e JavaScript para apresentar habilidades, projetos, experiência e formas de contato de maneira organizada e responsiva.',
 
         secHabilidades: 'Habilidades',
-        skillHtml: 'HTML',
-        skillCss: 'CSS',
-        skillJs: 'JavaScript',
-        skillPython: 'Python',
-        skillJava: 'Java',
-        skillGit: 'Git e GitHub',
+        skillHtml: '✦HTML',
+        skillCss: '✦CSS',
+        skillJs: '✦JavaScript',
+        skillPython: '✦Python',
+        skillJava: '✦Java',
+        skillGit: '✦Git e GitHub',
 
         secExperiencia: 'Experiência',
         expTitulo: 'Projeto acadêmico • Desenvolvimento Web',
@@ -63,8 +63,6 @@ const traducoes = {
         btnEnviar: 'Enviar',
         footerText: 'Instituto Federal do Paraná - Campus Paranavaí',
 
-        altFotoPerfil: 'Foto de perfil de Murilo Rolim',
-        altImagemDecorativa: 'Borboleta decorativa',
         
     },
 
@@ -91,12 +89,12 @@ const traducoes = {
         projetoPortfolioDesc: 'Website developed with HTML, CSS, and JavaScript to present skills, projects, experience, and contact details in an organized and responsive way.',
 
         secHabilidades: 'Skills',
-        skillHtml: 'HTML',
-        skillCss: 'CSS',
-        skillJs: 'JavaScript',
-        skillPython: 'Python',
-        skillJava: 'Java',
-        skillGit: 'Git and GitHub',
+        skillHtml: '✦HTML',
+        skillCss: '✦CSS',
+        skillJs: '✦JavaScript',
+        skillPython: '✦Python',
+        skillJava: '✦Java',
+        skillGit: '✦Git and GitHub',
 
         secExperiencia: 'Experience',
         expTitulo: 'Academic project • Web Development',
@@ -124,9 +122,6 @@ const traducoes = {
         placeholderMensagem: 'Write your message',
         btnEnviar: 'Send',
         footerText: 'Federal Institute of Paraná - Paranavaí Campus',
-
-        altFotoPerfil: 'Murilo Rolim profile photo',
-        altImagemDecorativa: 'Decorative butterfly',
        
     }
 };
