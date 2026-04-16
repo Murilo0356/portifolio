@@ -374,7 +374,8 @@ body {
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 12px; 
+
 }
 
 .formulario label {
@@ -384,7 +385,7 @@ body {
 
 .formulario input,
 .formulario textarea {
-    width: 100%;
+    width: 95%;
     padding: 12px 14px;
     border: 1px solid rgba(107, 33, 168, 0.2);
     border-radius: 12px;
@@ -392,6 +393,7 @@ body {
     color: var(--texto-escuro);
     font-family: inherit;
     resize: vertical;
+
 }
 
 .formulario input:focus,

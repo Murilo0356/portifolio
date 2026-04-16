@@ -11,30 +11,28 @@
     <header class="topo">
         <div class="header-content">
             <div class="logo-area">
-                <h1>Meu Portfólio</h1>
+                <h1 id="siteTitle">Meu Portfólio</h1>
             </div>
 
             <div class="header-acoes">
-                <div class="idiomas" aria-label="Seleção de idioma">
-                    <button class="btn-idioma ativo" type="button" data-lang="pt">PT</button>
-                    <button class="btn-idioma" type="button" data-lang="en">EN</button>
+                <div class="idiomas">
+                    <button class="btn-idioma ativo" data-lang="pt">PT</button>
+                    <button class="btn-idioma" data-lang="en">EN</button>
                 </div>
 
-                <button class="btn-tema" type="button" aria-label="Alternar tema escuro">
-                    🌙
-                </button>
+                <button class="btn-tema" type  ="button">🌙</button>
 
-                <img src="img/imagem-canto.png" alt="Borboleta decorativa" class="imagem-header">
+                <img id="imagemDecorativa" src="img/imagem-canto.png" alt="Borboleta decorativa" class="imagem-header">
             </div>
         </div>
 
-        <nav class="menu-principal" aria-label="Navegação principal">
-            <a href="#inicio">Início</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#experiencia">Experiência</a>
-            <a href="#educacao">Educação</a>
-            <a href="#contato">Contato</a>
+        <nav class="menu-principal">
+            <a href="#inicio" id="navInicio">Início</a>
+            <a href="#projetos" id="navProjetos">Projetos</a>
+            <a href="#habilidades" id="navHabilidades">Habilidades</a>
+            <a href="#experiencia" id="navExperiencia">Experiência</a>
+            <a href="#educacao" id="navEducacao">Educação</a>
+            <a href="#contato" id="navContato">Contato</a>
         </nav>
     </header>
 
@@ -42,45 +40,45 @@
 
         <section id="inicio" class="card hero">
             <div class="hero-texto">
-                <h2>Olá, eu sou Murilo Rolim</h2>
-                <p>
+                <h2 id="heroTitle">Olá, eu sou Murilo Rolim</h2>
+                <p id="heroText">
                     Sou estudante e desenvolvedor em formação, com interesse em criação de interfaces,
                     lógica de programação e desenvolvimento web. Gosto de transformar ideias em projetos
                     funcionais, organizados e visualmente atraentes.
                 </p>
 
                 <div class="hero-botoes">
-                    <a href="#projetos" class="btn-principal">Ver projetos</a>
-                    <a href="#contato" class="btn-secundario">Entrar em contato</a>
+                    <a href="#projetos" class="btn-principal" id="btnProjetos">Ver projetos</a>
+                    <a href="#contato" class="btn-secundario" id="btnContato">Entrar em contato</a>
                 </div>
             </div>
 
             <div class="hero-imagem">
                 <div class="foto-perfil-moldura grande">
-                    <img src="img/icone.jfif" alt="Foto de perfil de Murilo Rolim" class="foto-perfil">
+                    <img id="fotoPerfil" src="img/icone.jfif" alt="Foto de perfil de Murilo Rolim" class="foto-perfil">
                 </div>
             </div>
         </section>
 
         <section id="projetos" class="secao">
-            <h2 class="titulo-secao">Projetos</h2>
+            <h2 class="titulo-secao" id="secProjetos">Projetos</h2>
 
             <div class="grid-projetos">
                 <article class="card projeto-destaque">
                     <div class="conteudo-card">
-                        <h3>Jogo da Memória</h3>
-                        <p>
+                        <h3 id="projetoJogoTitulo">Jogo da Memória</h3>
+                        <p id="projetoJogoDesc">
                             Projeto interativo desenvolvido para treinar lógica, manipulação do DOM e integração com API.
                             O jogo carrega palavras, salva partidas e mostra ranking.
                         </p>
-                        <a href="jogo-da-memoria.html" class="link-projeto">Abrir Jogo da Memória</a>
+                        <a href="jogo-da-memoria.html" class="link-projeto" id="projetoJogoLink">Abrir Jogo da Memória</a>
                     </div>
                 </article>
 
                 <article class="card projeto-destaque">
                     <div class="conteudo-card">
-                        <h3>Portfólio Pessoal</h3>
-                        <p>
+                        <h3 id="projetoPortfolioTitulo">Portfólio Pessoal</h3>
+                        <p id="projetoPortfolioDesc">
                             Site desenvolvido com HTML, CSS e JavaScript para apresentar habilidades, projetos,
                             experiência e formas de contato de maneira organizada e responsiva.
                         </p>
@@ -90,29 +88,29 @@
         </section>
 
         <section id="habilidades" class="secao">
-            <h2 class="titulo-secao">Habilidades</h2>
+            <h2 class="titulo-secao" id="secHabilidades">Habilidades</h2>
 
             <div class="card bloco-conteudo">
                 <ul class="lista-habilidades">
-                    <li><span>✦</span> HTML</li>
-                    <li><span>✦</span> CSS</li>
-                    <li><span>✦</span> JavaScript</li>
-                    <li><span>✦</span> Python</li>
-                    <li><span>✦</span> Java</li>
-                    <li><span>✦</span> Git e GitHub</li>
+                    <li id="skillHtml"><span>✦</span> HTML</li>
+                    <li id="skillCss"><span>✦</span> CSS</li>
+                    <li id="skillJs"><span>✦</span> JavaScript</li>
+                    <li id="skillPython"><span>✦</span> Python</li>
+                    <li id="skillJava"><span>✦</span> Java</li>
+                    <li id="skillGit"><span>✦</span> Git e GitHub</li>
                 </ul>
             </div>
         </section>
 
         <section id="experiencia" class="secao">
-            <h2 class="titulo-secao">Experiência</h2>
+            <h2 class="titulo-secao" id="secExperiencia">Experiência</h2>
 
             <div class="card bloco-conteudo">
                 <div class="item-curriculo">
-                    <h3>Projeto acadêmico • Desenvolvimento Web</h3>
-                    <p class="linha-info">Instituto Federal do Paraná - Campus Paranavaí</p>
-                    <p class="linha-info">2025 - atual</p>
-                    <p>
+                    <h3 id="expTitulo">Projeto acadêmico • Desenvolvimento Web</h3>
+                    <p class="linha-info" id="expInstituicao">Instituto Federal do Paraná - Campus Paranavaí</p>
+                    <p class="linha-info" id="expPeriodo">2024 - atual</p>
+                    <p id="expTexto">
                         Desenvolvimento de um portfólio pessoal com foco em semântica, responsividade,
                         organização visual e integração com API para apresentação de funcionalidades interativas.
                     </p>
@@ -121,14 +119,14 @@
         </section>
 
         <section id="educacao" class="secao">
-            <h2 class="titulo-secao">Educação</h2>
+            <h2 class="titulo-secao" id="secEducacao">Educação</h2>
 
             <div class="card bloco-conteudo">
                 <div class="item-curriculo">
-                    <h3>Instituto Federal do Paraná - Campus Paranavaí</h3>
-                    <p class="linha-info">Curso: Informática / Desenvolvimento de Sistemas</p>
-                    <p class="linha-info">Período: 2024 - atual</p>
-                    <p>
+                    <h3 id="eduTitulo">Instituto Federal do Paraná - Campus Paranavaí</h3>
+                    <p class="linha-info" id="eduCurso">Curso: Informática / Desenvolvimento de Sistemas</p>
+                    <p class="linha-info" id="eduPeriodo">Período: 2024 - atual</p>
+                    <p id="eduTexto">
                         Formação focada em programação, lógica, desenvolvimento de sistemas e construção de interfaces.
                     </p>
                 </div>
@@ -136,29 +134,32 @@
         </section>
 
         <section id="contato" class="secao">
-            <h2 class="titulo-secao">Contato</h2>
+            <h2 class="titulo-secao" id="secContato">Contato</h2>
 
             <div class="grid-contato">
                 <div class="card bloco-conteudo">
-                    <h3>Meus contatos</h3>
-                    <p>E-mail: MuriloRolim2005@gmail.com</p>
-                    <p>Telefone: (55) 44 99167-2005</p>
-                    <p>GitHub: <a href="https://github.com/Murilo0356" target="_blank" rel="noopener noreferrer">Murilo0356</a></p>
+                    <h3 id="contatoMeus">Meus contatos</h3>
+                    <p id="contatoEmail">E-mail: MuriloRolim2005@gmail.com</p>
+                    <p id="contatoTelefone">Telefone: (55) 44 99167-2005</p>
+                    <p>
+                        <span id="githubLabel">GitHub:</span>
+                        <a href="https://github.com/Murilo0356" target="_blank" rel="noopener noreferrer" id="githubUser">Murilo0356</a>
+                    </p>
                 </div>
 
                 <div class="card bloco-conteudo">
-                    <h3>Formulário de contato</h3>
+                    <h3 id="contatoFormTitulo">Formulário de contato</h3>
                     <form class="formulario">
-                        <label for="nome-contato">Nome</label>
+                        <label for="nome-contato" id="labelNome">Nome</label>
                         <input type="text" id="nome-contato" name="nome-contato" placeholder="Seu nome">
 
-                        <label for="email-contato">E-mail</label>
+                        <label for="email-contato" id="labelEmail">E-mail</label>
                         <input type="email" id="email-contato" name="email-contato" placeholder="seuemail@email.com">
 
-                        <label for="mensagem">Mensagem</label>
+                        <label for="mensagem" id="labelMensagem">Mensagem</label>
                         <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
 
-                        <button type="submit" class="btn-principal">Enviar</button>
+                        <button type="submit" class="btn-principal" id="btnEnviar">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -167,9 +168,9 @@
     </main>
 
     <footer class="rodape">
-        <p>Instituto Federal do Paraná - Campus Paranavaí</p>
+        <p id="footerText">Instituto Federal do Paraná - Campus Paranavaí</p>
     </footer>
-    <script src="js/index.js"></script>
 
+    <script src="js/index.js"></script>
 </body>
 </html>
