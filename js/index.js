@@ -1,6 +1,9 @@
 const html = document.documentElement;
 const botaoTema = document.querySelector('.btn-tema');
 const botoesIdioma = document.querySelectorAll('.btn-idioma');
+const botaoClima = document.getElementById('btnClima');
+const climaTexto = document.getElementById('climaTexto');
+
 
 const traducoes = {
     pt: {
@@ -233,3 +236,38 @@ botaoTema.addEventListener('click', () => {
 });
 
 trocarIdioma('pt');
+
+function buscarClima() {
+    if (!navigator.geolocation) {
+        climaTexto.textContent = 'N/D';
+        return;
+    }
+
+    climaTexto.textContent = '...';
+
+    navigator.geolocation.getCurrentPosition(
+        async (posicao) => {
+            const lat = posicao.coords.latitude;
+            const lon = posicao.coords.longitude;
+
+            const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m&timezone=auto`;
+
+            try {
+                const resposta = await fetch(url);
+                const dados = await resposta.json();
+
+                const temperatura = dados.current.temperature_2m;
+                climaTexto.textContent = `${Math.round(temperatura)}°C`;
+            } catch (erro) {
+                climaTexto.textContent = 'ERRO';
+            }
+        },
+        () => {
+            climaTexto.textContent = 'NEGADO';
+        }
+    );
+}
+
+if (botaoClima && climaTexto) {
+    botaoClima.addEventListener('click', buscarClima);
+}
