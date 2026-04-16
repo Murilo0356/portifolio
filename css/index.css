@@ -10,18 +10,30 @@
     --sombra: rgba(0, 0, 0, 0.15);
 }
 
-* {
-    box-sizing: border-box;
+html[data-theme="light"] {
+    --fundo: linear-gradient(135deg, rgba(217, 203, 221, 0.598), rgba(212, 203, 211, 0.6)),
+             url("../img/teste.jfif");
 }
 
-html {
-    scroll-behavior: smooth;
+html[data-theme="dark"] {
+    --fundo: linear-gradient(135deg, rgba(45, 35, 58, 0.92), rgba(31, 31, 44, 0.92)),
+             url("../img/teste.jfif");
+}
+html[data-theme="dark"] body {
+    color: #ffffff;
 }
 
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] label,
+html[data-theme="dark"] a {
+    color: #ffffff;
+}
 body {
-    background:
-        linear-gradient(135deg, rgba(217, 203, 221, 0.598), rgba(212, 203, 211, 0.6)),
-        url("../img/teste.jfif");
+    background: var(--fundo);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
