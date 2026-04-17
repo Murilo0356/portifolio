@@ -5,6 +5,8 @@ const botaoClima = document.getElementById('btnClima');
 const climaTexto = document.getElementById('climaTexto');
 
 
+//tradução
+
 const traducoes = {
     pt: {
         pageTitle: 'Portfólio Pessoal',
@@ -217,6 +219,7 @@ botoesIdioma.forEach(botao => {
     });
 });
 
+//trocar tema
 
 botaoTema.addEventListener('click', () => {
     const temaAtual = html.getAttribute('data-theme');
@@ -231,6 +234,8 @@ botaoTema.addEventListener('click', () => {
 });
 
 trocarIdioma('pt');
+
+// Buscar clima
 
 function buscarClima() {
     if (!navigator.geolocation) {
